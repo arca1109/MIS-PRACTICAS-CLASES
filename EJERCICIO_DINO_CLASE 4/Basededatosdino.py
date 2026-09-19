@@ -9,10 +9,10 @@ Base_de_datos = [
 
 # Diccionario para mapear la opción del menú con el índice de la tupla y su nombre
 MAPEO_OPCIONES = {
-    "1": {"indice": 0, "nombre": "Nombre"},
-    "2": {"indice": 1, "nombre": "Tipo"},
-    "3": {"indice": 2, "nombre": "Dieta"},
-    "4": {"indice": 3, "nombre": "Periodo"}
+    "1": {"indice": 0, "nombre": "🦕 Nombre"},
+    "2": {"indice": 1, "nombre": "🦖 Tipo"},
+    "3": {"indice": 2, "nombre": "🥗 Dieta"},
+    "4": {"indice": 3, "nombre": "🕑 Periodo"}
 }
 
 def mostrar_dinosaurio(dino):
@@ -23,7 +23,7 @@ print("Bienvenido a la base de datos de dinosaurios.")
 print("Aquí puedes buscar información sobre diferentes dinosaurios según su nombre, tipo, dieta o periodo.")
 
 while True: #Bucle principal del programa
-    print("\n=== MENÚ PRINCIPAL === ¿Cómo deseas buscar la información?")
+    print("\n 🗒️  MENÚ PRINCIPAL: ¿Cómo deseas buscar la información?")
     print("1. Por Nombre")
     print("2. Por Tipo")
     print("3. Por Dieta")
@@ -33,7 +33,7 @@ while True: #Bucle principal del programa
     opcion_principal = input("Elija una opción (1-5): ").strip()
     
     if opcion_principal == "5":
-        print("¡Gracias por usar la base de datos de dinosaurios! Hasta luego.")
+        print("¡Gracias por usar la base de datos de dinosaurios!🦕 Hasta luego.🖐️")
         print("¡Saliendo del programa!")
         break
         
@@ -43,7 +43,7 @@ while True: #Bucle principal del programa
         nombre_campo = campo_info["nombre"]
         
         # Segundo menú: Tipo de búsqueda
-        print(f"\n--- BÚSQUEDA POR {nombre_campo.upper()} ---")
+        print(f"\n🗒️  BÚSQUEDA POR {nombre_campo.upper()} ---")
         print("1. Búsqueda específica (Acepta texto parcial)")
         print("2. Búsqueda general (Ver todos los elementos disponibles)")
         
